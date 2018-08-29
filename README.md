@@ -7,7 +7,7 @@ Description of Steps:
 2. Clean the texts (Note: Only the most basic format of cleaning is shown here with the following features:
     - retain only letters (ignore case of words, all converted to lower)
     - removing stopwords from nltk)
-3. Get the 20 most common words in each text (see alternate version in ALT folder for script that looks through all words) and the frequencies of each word in the text, which will impact the weight of the given word's sentiment score on the entire text's total score
+3. Get the 20 most common words in each text (see alternate version with alt...py for script that looks through all words) and the frequencies of each word in the text, which will impact the weight of the given word's sentiment score on the entire text's total score
 4. Calculate the sentiment score using SentiWordNet of each of the top 20 words for each text and used the logit function (with 0.5 to avoid log(0)) to calculate the overall sentiment score. If the score is less than 0, then the text is negative. 
 5. (optional) Sentiment scores are stored in a vector "y" and added to each row in the initial csv file 
 
